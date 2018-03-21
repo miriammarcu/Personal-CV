@@ -1,0 +1,17 @@
+﻿
+<div>
+    <img src={{persInfo.ProfilPhotoSrc}} class="img-rounded" alt="foto">
+    <h2 class=" bg-info">Name:{{persInfo.Name}}</h2>
+    <h4>Email:{{persInfo.Email}}</h4>
+    <h4 ng-click="isAdressClicked=!isAdressClicked">Adress:{{persInfo.Adress}}</h4>
+   
+    <div  ng-if="isAdressClicked">
+
+<img class="imagehover img-rounded" src={{persInfo.AdressPhotoSrc}} style="width:250px;height:150px" 
+     alt="location-photo"/>  
+
+    </div>    
+
+    <h4>Phone:{{persInfo.Phone}}</h4>
+   
+</div>
