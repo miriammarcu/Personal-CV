@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="AdminCV">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/Client/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Client/lib/angularjs-datepicker/dist/angular-datepicker.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" ui-sref="#">MY CV</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+            <li ui-sref-active="active"><a ui-sref="info">Personal information</a></li>
+            <li ui-sref-active="active"><a ui-sref="education">Education</a></li>
+            <li ui-sref-active="active"><a ui-sref="institution">Institutions</a></li>
+            <li ui-sref-active="active"><a ui-sref="degree">Degrees</a></li>
+            <li ui-sref-active="active"><a ui-sref="workExperience">Work experience</a></li>
+            <li ui-sref-active="active"><a ui-sref="companies">Companies</a></li>
+            <li ui-sref-active="active"><a ui-sref="positions">Positions</a></li>
+            <li ui-sref-active="active"><a ui-sref="personalskills">Personal skills</a></li>
+            <li ui-sref-active="active"><a ui-sref="languages">Language proficiency</a></li>
+            <li ui-sref-active="active"><a ui-sref="languageList">Languages</a></li>
+            <li ui-sref-active="active"><a ui-sref="languageProficiency">Proficiency levels</a></li>
+
+
+
+        </ul>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+        <main ui-view>  </main>
+
+    </div>
+
+<script type="text/javascript" src="~/Client/lib/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="~/Client/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="~/Client/lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="~/Client/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="~/Client/lib/angularjs-datepicker/dist/angular-datepicker.min.js"></script>
+<script type="text/javascript" src="~/Client/app.js"></script>
+<script type="text/javascript" src="~/Client/services/infoService.js"></script>
+<script type="text/javascript" src="~/Client/components/controllers/workExperienceController.js"></script>
+</body>
+</html>

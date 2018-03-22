@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3943c016898248148813a1558eac2e3f" Name="Diagram1">
+        <EntityTypeShape EntityType="ProiectCVModel.Company" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.Degree" Width="1.5" PointX="5.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.Education" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.Institution" Width="1.5" PointX="5.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.Language" Width="1.5" PointX="2.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.Language_level" Width="1.5" PointX="5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.Level" Width="1.5" PointX="2.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.PersonalSkills" Width="1.5" PointX="10" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.Position" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.SkillCategory" Width="1.5" PointX="7.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.UserInfo" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProiectCVModel.WorkExperience" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="ProiectCVModel.FK_Wrk_Comp" ManuallyRouted="false" />
+        <AssociationConnector Association="ProiectCVModel.FK_Edu_Deg" ManuallyRouted="false" />
+        <AssociationConnector Association="ProiectCVModel.FK_Edu_Inst" ManuallyRouted="false" />
+        <AssociationConnector Association="ProiectCVModel.FK_LangLev_Lang" ManuallyRouted="false" />
+        <AssociationConnector Association="ProiectCVModel.FK_LangLev_Lev" ManuallyRouted="false" />
+        <AssociationConnector Association="ProiectCVModel.FK_PersSkills_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="ProiectCVModel.FK_Wrk_Pos" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

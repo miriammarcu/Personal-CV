@@ -1,0 +1,51 @@
+﻿<div ng-controller="WorkExperienceController">
+    <h2 class="bg-info">Work experience</h2>
+    {{ID}}
+    <div class="row">
+        <div class="col-md-6">Company</div>
+        <div class="col-md-6"><select ng-model="company"><option></option><option value={{cmp.ID_Company}} ng-repeat="cmp in compInfo track by $index">{{cmp.Name}}</option></select></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">Position</div>
+        <div class="col-md-6"><select ng-model="position"><option value={{pos.ID_Position}} ng-repeat="pos in posInfo track by $index">{{pos.Name}}</option></select></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">Start date</div>
+        <div class="col-md-6">
+            <datepicker date-format="yyyy-MM-dd">
+                <input ng-model="startDate" type="text" />
+            </datepicker>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">End date</div>
+        <div class="col-md-6">
+            <datepicker date-format="yyyy-MM-dd">
+                <input ng-model="endDate" type="text" />
+            </datepicker>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12"><button ng-click="saveData()">ADD</button></div>
+    </div>
+
+    <hr />
+
+    <div class="row">
+        <div class="col-md-3"><h3>Company</h3></div>
+        <div class="col-md-3"><h3>Position</h3></div>
+        <div class="col-md-3"><h3>Start date</h3></div>
+        <div class="col-md-3"><h3>End date</h3></div>
+    </div>
+    <div class="row" ng-repeat="wrk in workInfo track by $index">
+        <div class="col-md-3">{{wrk.Company}}</div>
+        <div class="col-md-3">{{wrk.Position}}</div>
+        <div class="col-md-3">{{wrk.StartDateFormat}}</div>
+        <div class="col-md-3">{{wrk.EndDateFormat}}<button ng-click="deleteData(wrk.ID_WorkExperience)">REMOVE</button><button>EDIT</button></div>
+
+
+
+    </div>
+
+  
+</div>
